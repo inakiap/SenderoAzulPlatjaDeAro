@@ -110,6 +110,10 @@ padding-right: 20px;
 
 
 	}
+#idiomas {
+	margin-top: auto;
+	margin-bottom: auto;
+}
 
 /*Iconos*/
 .ui-icon-earth {
