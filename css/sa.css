@@ -2,6 +2,81 @@
 /* CSS Document */
 /* required styles */
 
+/* First breakpoint is 768px. 3 column layout. Tiles 250x250 pixels at the breakpoint. */
+    .portada .ui-listview .ui-li.ui-btn {
+        float: center;
+        
+        height: 75px;
+             
+        margin-left: auto;
+        border-width: 2;
+        opacity: 0.6; /* The 1px border would break the layout so we set it on .ui-btn-inner instead. */
+    }
+
+    /* If you don't want a border at all, just set "border: none;" here to negate the semi white top border 
+    .portada .ui-listview .ui-li.ui-btn-inner {
+        border: inherit;
+        border-width: 1px;
+        margin: -1px;
+    }
+    */
+    .portada .ui-listview .ui-btn-inner,
+    .portada .ui-listview .ui-btn-text,
+    .portada .ui-listview .ui-link-inherit {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: #0066cc;
+
+
+    }
+
+    /* Hide the icon */
+    .portada .ui-listview .ui-icon {
+        display: none;
+    }
+    /* Make text wrap. */
+    .portada .ui-listview .ui-li-heading,
+    .portada .ui-listview .ui-li-desc {
+        white-space: normal;
+        overflow: visible;
+        position: absolute;
+        left: 0;
+        right: 0;
+        font-size: x-large;
+        
+    }
+    /* Text position  */
+    .portada .ui-listview .ui-li-heading {
+        margin: auto;
+                
+    }
+
+    
+    /* If you want to add shadow, don't kill the focus style. */
+    .portada .ui-listview .ui-btn:not(.ui-focus) {
+        -moz-box-shadow: 0px 0px 9px #111;
+        -webkit-box-shadow: 0px 0px 9px #111;
+        box-shadow: 0px 0px 9px #111;
+    }
+   
+    /* Animate focus and hover style, and resizing. */
+    .portada .ui-listview .ui-btn {
+        -webkit-transition: all 500ms ease;
+        -moz-transition: all 500ms ease;
+        -o-transition: all 500ms ease;
+        -ms-transition: all 500ms ease;
+        transition: all 500ms ease;
+    }
+    /* Thumb */
+    .portada .ui-listview .ui-li-thumb{
+        width: 56px;
+        height: 56px  ;
+        margin-left: 10%;
+        margin-top: 10px;
+
+    }
+
 .main {
 height: inherit;
 width: 100%;
@@ -89,6 +164,23 @@ padding-right: 20px;
 	margin-left: auto;
 	
 }
+
+div.msn
+  {
+  width:400px;
+  height:180px;
+  margin:30px 50px;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier */
+  }
+div.msn p
+  {
+  margin:30px 40px;
+  font-weight:bold;
+  color:#000000;
+  }
 
 @media only screen and (max-width: 480px) {
 
